@@ -5,6 +5,20 @@
     font-weight: 800;
     line-height: 1.5;
     letter-spacing: 1px;
+    position: relative;
+}
+.common-heading::after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    content: "";
+    height: 5px;
+    width: 100px;
+    bottom: 0px;
+    margin-top: 45px;
+    background-color: black;
 }
 .form-heading{
     font-size: 32px;
@@ -12,6 +26,20 @@
     color: #ff6d00;
     font-weight: 800;
     text-align: center;
+    position: relative;
+}
+.form-heading::after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    content: "";
+    height: 5px;
+    width: 100px;
+    bottom: 0px;
+    margin-top: 40px;
+    background-color:#ff6d00;
 }
 .contact-inputs{
     display: flex;
@@ -19,7 +47,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 10px 0 50px 0;
+    padding:50px 0;
 }
 .contact-inputs input{
     padding: 20px;
