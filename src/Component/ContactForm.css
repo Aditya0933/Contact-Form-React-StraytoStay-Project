@@ -1,0 +1,134 @@
+.common-heading{
+    padding:4% 0;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.form-heading{
+    font-size: 32px;
+    line-height: 1.5;
+    color: #ff6d00;
+    font-weight: 800;
+    text-align: center;
+}
+.contact-inputs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0 50px 0;
+}
+.contact-inputs input{
+    padding: 20px;
+    border: 2px solid #ff6d00;
+    border-radius: 10px;
+    min-width: 300px;
+}
+.contact-inputs input::placeholder{
+    font-size: 20px;
+    color: #ff6d00;
+}
+.contact-inputs textarea{
+    padding: 20px;
+    border: 2px solid #ff6d00;
+    border-radius: 10px;
+    min-width: 300px;
+}
+.contact-inputs textarea::placeholder{
+    font-size: 22px;
+    color: #ff6d00;
+}
+.rescue-btn{
+    background-color: #ff6d00;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 14px 16px!important;
+    margin-top: 20px;
+    border-radius: 30px!important;
+    border: 2px solid #ff6d00;
+    transition: .2s all linear;
+    font-weight: 800;
+}
+.rescue-btn:hover{
+    background-color: transparent!important;
+    color: #ff6d00;
+}
+/**********************/
+/* Apply styles to the contact container */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Style the heading */
+.contact-container h2 {
+    color: #333;
+}
+
+/* Create a flex container for responsive layout */
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style the contact sections within the flex container */
+.contact-info, .contact-form, .office-address {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-info p, .contact-info a {
+    font-size: 24px;
+    color: #555;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.office-address p {
+    font-size: 20px;
+    color: #555;
+}
+
+/* Style the support hours section */
+.support-hours {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.support-hours p {
+    font-size: 18px;
+    color: #555;
+}
+
+.support-hours ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.support-hours li {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+/* Responsive media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
